@@ -1,0 +1,43 @@
+﻿<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body class="container">
+    <main>
+		<div class="bg-4 jumbotron">
+		  <div class="container text-center">
+			<h1>Bootstrap with EJS</h1>      
+			<p>Some text as placehold...</p>
+		  </div>
+		</div>
+
+        <div class="container-fluid bg-5 text-center" style="max-width: 1200px">    
+          <h3>Some of my Work</h3><br>
+          <div class="row">
+            <% var i =0; %>
+            <% users.forEach(function(user) { %>
+                <div class="col-sm-4">
+                    <p><%= user.name %></p>
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="bg-2 img-responsive" style="width:100%" alt="Image">
+                </div>
+                <% if(i==2){ %>
+            </div>
+        </div>
+        <div class="container-fluid bg-5 text-center" style="max-width: 1200px">
+            <div class="row">
+                <% } i++; %>
+            <% }); %>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+    
+</body>
+</html>

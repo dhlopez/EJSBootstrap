@@ -1,0 +1,32 @@
+body {
+}
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	.bg-1{
+		 background-color: #000000;
+	}
+	.bg-5{
+		 background-color: #fff;
+	}
+	.fontWhite-1{
+		 color: #FFFFFF;
+	}
+	.bg-2{
+		 background-color: #A1A6B4;
+	}
+	.bg-3{
+		 background-color: #2C363F;
+		 color: #FFFFFF;
+	}
+	.bg-4{
+		 background-color: #96BBBB;
+	}

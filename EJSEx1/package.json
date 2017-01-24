@@ -1,0 +1,13 @@
+{
+  "author": {
+    "name": "dlopez"
+  },
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "^4.6.1"
+  },
+  "description": "EJSEx1",
+  "main": "server.js",
+  "name": "ejsex1",
+  "version": "0.0.0"
+}
