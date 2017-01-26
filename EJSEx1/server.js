@@ -2,10 +2,12 @@
 // load the things we need
 var express = require('express');
 var app = express();
+var http = require('http');
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/views'));
+app.use(express.static(__dirname + '/scripts'));
 
 // use res.render to load up an ejs view file
 
@@ -32,5 +34,22 @@ app.get('/about', function (req, res) {
     res.render('pages/about');
 });
 
-app.listen(8080);
-console.log('8080 is the magic port');
+var serve = http.createServer(app); 
+var io = require('socket.io')(serve);
+
+serve.listen(8080, function () {
+    console.log('Express server listening on port 8080');
+});
+
+io.on('connection', function (socket) {
+    socket.emit('chat', 'a user connected');
+    console.log('a user connected');
+
+    socket.on('disconnect', function () {
+        console.log('user disconnected');
+    });
+    socket.on('chat', function (msg) {
+        socket.broadcast.emit('chat', msg);
+    });
+});
+

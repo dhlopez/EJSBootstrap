@@ -1,2 +1,0 @@
-C:\Users\dlopez.CFAV\Desktop\Practice\Node\EJS\EJSPort\EJSEx1\obj\Debug\EJSPort.njsprojResolveAssemblyReference.cache
-C:\Users\dlopez.CFAV\Desktop\Practice\Node\EJS\EJSPort\EJSEx1\bin\Microsoft.NodejsTools.WebRole.dll

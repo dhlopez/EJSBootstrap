@@ -4,7 +4,8 @@
   },
   "dependencies": {
     "ejs": "^1.0.0",
-    "express": "^4.6.1"
+    "express": "^4.6.1",
+    "socket.io": "^1.7.2"
   },
   "description": "EJSEx1",
   "main": "server.js",
